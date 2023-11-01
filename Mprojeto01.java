@@ -50,12 +50,21 @@ public class Mprojeto01 {
 
                 if (b1 == 1) {
                     System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
-                    System.out.println("Destiny decide que a sua arma sera o Arco divino, o ferreiro muito talentoso incio o processo para forjar sua nova arma.");
+                    System.out.println("Destiny decide que a sua arma sera o Arco divino, o ferreiro muito talentoso incia o processo para forjar sua nova arma.");
+                    System.out.println("Entretanto o ferreiro avisa a Destiny que para que ele possa ter a capacidade de empunhalar o Arco divino, ele precisará treinar para aumentar sua força.");
+                    System.out.println("Enquanto a sua nova arma está sendo forjada destiny vai até o centro de treinamento para mortais da cidade de Erion para adquirir um pouco mais de força.");
+                    System.out.println("Após 2 longas horas de treinamento inicial no centro da cidade, destiny sentiu que estava um pouco mais forte.");
+                    Protagonista.treinar();
+                    System.out.println("Destiny volta para a forja muito animado e apreensível se o treino foi o suficiente para obter a capacidade.");
                     System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
                 }
                     else if (b1 == 2) {
                     System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
                     System.out.println("Destiny decide que a sua arma sera o Martelo Mjolnir, o ferreiro muito talentoso incio o processo para forjar sua nova arma.");
+                    System.out.println("Entretanto o ferreiro avisa a Destiny que para que ele possa ter a capacidade de empunhalar o Mjolnir, ele precisará treinar para aumentar sua força.");
+                    System.out.println("Após 2 longas horas de treinamento inicial no centro da cidade, destiny sentiu que estava um pouco mais forte.");
+                    Protagonista.treinar();
+                    System.out.println("Destiny volta para a forja muito animado e apreensível se o treino foi o suficiente para obter a capacidade necessária.");
                     System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
                 }
             }
@@ -78,12 +87,18 @@ public class Mprojeto01 {
                 System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
                 System.out.println("Destiny decide que vai continuar em busca mais informações na tarvena.");
                 System.out.println("Destiny descobre um pouco mais sobre o deserto, Noatun é um deserto onde guerreiros se encontram para batalhar entre si e onde também vivem monstros. ");
+                System.out.println("Destiny fica muito animado para ir testar sua capacidade em batalha no deserto, mas primeiro ele decide que vai arrumar um local para que possa passar a noite e decider o seu caminho no dia seguinte.");
                 System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
             }
             else if (b2 == 2) {
                 System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
                 System.out.println("Destiny decide que é melhor seguir caminho para procurar um lugar para que possa descansar da sua viagem ate a cidade de Erion.");
                 System.out.println("Destiny depois de alguns minutos vagando pela cidade finalmente consegue encontrar uma pousada para guerreios viajantes. Onde consegue se instalar para que no outro dia continuasse em busca de seu objetivo.");
+                System.out.println("De manhã após a noite de descanso na pousada, destiny encontra no salão principal um outro jovem guerreiro, chamado Alastar, que está seriamente ferido de uma batalha no deserto de Noatum.");
+                System.out.println("Destiny rapidademente pega sua poção de cura que sempre leva em suas viajens e entrega para alastar.");
+                System.out.println("Pede para que ele tome a poção para que pudesse se recuperar da batalha rapidamente.");
+                System.out.println("Alastar assim toma a poção dada por destiny.");
+                Psecundario.poção();
                 System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
             }  
         }
