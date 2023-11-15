@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Mprojeto01 {
+public class Mprojeto03 {
     public static void main(String[] args) throws Exception {
         System.out.println("=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
         System.out.println("SEJA BEM VINDO AO LIVRO INTERATIVO WYD. ");
