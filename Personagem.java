@@ -10,10 +10,10 @@ public class Personagem {
         this.energia = energia;
         this.força = força;
     }
-    void alteraçãoEnergia(int aumento){
+    void alteracaoEnergia(int aumento){
         if (aumento != 0 ) {
             this.energia += aumento;
-            System.out.println("De repente após " + this.nome + " tomar a poção de energia, a sua energia aumentou 20 pontos, agora destiny tem " + this.energia + " pontos de energia.");
+            System.out.println("De repente após " + this.nome + " tomar a poção de energia, a sua energia aumentou " + aumento + " pontos, agora " + this.nome + " tem " + this.energia + " pontos de energia.");
         }
     }
     public void poção() {
