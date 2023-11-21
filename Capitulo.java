@@ -2,22 +2,38 @@ import java.util.Scanner;
 
 public class Capitulo {
     String texto;
-    Personagem protagonista;
-    Personagem Psecundario;
-    int alteracaoEnergia;
+    Personagem personagem1;
+    Personagem personagem2;
     Scanner escaneador;
-    int aumentoPersonagem1;
-    int aumentoPersonagem2;
-    String[] escolhas;
+    int incrementoPersonagem1;
+    int incrementoPersonagem2;
+    Escolha[] escolhas;
 
-    public Capitulo(String texto, String [] escolhas, Personagem personagem1, Personagem personagem2, int alteracaoEnergia, Scanner escaneador){
+    public Capitulo(String texto, Personagem personagem1, Personagem personagem2, int incrementoPersonagem1, int incrementoPersonagem2, Scanner escaneador){
         this.texto = texto;
-        this.escolhas = escolhas;
-        this.alteracaoEnergia = alteracaoEnergia;
         this.escaneador = escaneador;
-        this.protagonista = personagem1;
-        this.Psecundario = personagem2;
+        this.personagem1 = personagem1;
+        this.personagem2 = personagem2;
+        this.incrementoPersonagem1 = incrementoPersonagem1;
+        this.incrementoPersonagem2 = incrementoPersonagem2;
+        
     }
+    public void executar() {
+        mostrar();
+    
+        if (escolhas != null && escolhas.length > 0) {
+            int capituloEscolhido = escolher();
+    
+            if (capituloEscolhido >= 0 && capituloEscolhido < escolhas.length) {
+                escolhas[capituloEscolhido].proximo.executar();
+            } else {
+                System.out.println("Opção inválida. Escolha uma opção entre 1 e " + escolhas.length + ".");
+            }
+        } else {
+            System.out.println("Fim da história.");
+        }
+    }
+
     public int escolher() {
         int resultado = -1;
         Scanner sc = new Scanner(System.in);
@@ -27,7 +43,7 @@ public class Capitulo {
             System.out.println("Escolha uma opção: ");
 
             for (int i = 0; i < escolhas.length; i++) {
-                System.out.println((i + 1) + ">>>>> " + escolhas[i]);
+                System.out.println((i + 1) + ">>>>> " + escolhas[i].texto);
             }
             
             String input = sc.nextLine();
@@ -48,14 +64,14 @@ public class Capitulo {
     }
     public void mostrar() {
         System.out.println(texto);
-        protagonista.alteracaoEnergia(aumentoPersonagem1);
-        Psecundario.alteracaoEnergia(aumentoPersonagem2);
+        personagem1.atualizarEnergia(incrementoPersonagem1);
+        personagem2.atualizarEnergia(incrementoPersonagem2);
     
         if (escolhas != null && escolhas.length > 0) {
             System.out.println("Escolhas disponíveis: ");
             for (int i = 0; i < escolhas.length; i++) {
-                System.out.println((i + 1) + ". " + escolhas[i]);
+                System.out.println((i + 1) + ". " + escolhas[i].texto);
             }
         }
     }
-}
+    }
