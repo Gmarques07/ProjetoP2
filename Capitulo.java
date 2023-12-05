@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
 public class Capitulo {
-    String texto;
-    Personagem personagem1;
-    Personagem personagem2;
-    Scanner escaneador;
-    int incrementoPersonagem1;
-    int incrementoPersonagem2;
-    Escolha[] escolhas;
+  private String texto;
+  private Personagem personagem1;
+  private Personagem personagem2;
+  private Scanner escaneador;
+  private int incrementoPersonagem1;
+  private int incrementoPersonagem2;
+  private Escolha[] escolhas;
 
     public Capitulo(String texto, Personagem personagem1, Personagem personagem2, int incrementoPersonagem1, int incrementoPersonagem2, Scanner escaneador){
         this.texto = texto;
@@ -16,8 +16,36 @@ public class Capitulo {
         this.personagem2 = personagem2;
         this.incrementoPersonagem1 = incrementoPersonagem1;
         this.incrementoPersonagem2 = incrementoPersonagem2;
-        
     }
+
+    public String getTexto() {
+        return texto;
+    }
+
+    public Personagem getPersonagem1() {
+        return personagem1;
+    }
+
+    public Personagem getPersonagem2() {
+        return personagem2;
+    }
+
+    public int getIncrementoPersonagem1() {
+        return incrementoPersonagem1;
+    }
+
+    public int getIncrementoPersonagem2() {
+        return incrementoPersonagem2;
+    }
+
+    public Escolha[] getEscolhas() {
+        return escolhas;
+    }
+
+    public void setEscolhas(Escolha[] escolhas) {
+        this.escolhas = escolhas;
+    }
+
     public void executar() {
         mostrar();
     
@@ -25,7 +53,7 @@ public class Capitulo {
             int capituloEscolhido = escolher();
     
             if (capituloEscolhido >= 0 && capituloEscolhido < escolhas.length) {
-                escolhas[capituloEscolhido].proximo.executar();
+                escolhas[capituloEscolhido].getProximo().executar();
             } else {
                 System.out.println("Opção inválida. Escolha uma opção entre 1 e " + escolhas.length + ".");
             }
@@ -34,7 +62,7 @@ public class Capitulo {
         }
     }
 
-    public int escolher() {
+    private int escolher() {
         int resultado = -1;
         Scanner sc = new Scanner(System.in);
         boolean escolhaCorreta = false;
@@ -43,7 +71,7 @@ public class Capitulo {
             System.out.println("Escolha uma opção: ");
 
             for (int i = 0; i < escolhas.length; i++) {
-                System.out.println((i + 1) + ">>>>> " + escolhas[i].texto);
+                System.out.println((i + 1) + ">>>>> " + escolhas[i].getTexto());
             }
             
             String input = sc.nextLine();
@@ -62,7 +90,7 @@ public class Capitulo {
 
         return resultado;
     }
-    public void mostrar() {
+    private void mostrar() {
         System.out.println(texto);
         personagem1.atualizarEnergia(incrementoPersonagem1);
         personagem2.atualizarEnergia(incrementoPersonagem2);
@@ -70,7 +98,7 @@ public class Capitulo {
         if (escolhas != null && escolhas.length > 0) {
             System.out.println("Escolhas disponíveis: ");
             for (int i = 0; i < escolhas.length; i++) {
-                System.out.println((i + 1) + ". " + escolhas[i].texto);
+                System.out.println((i + 1) + ". " + escolhas[i].getTexto());
             }
         }
     }
