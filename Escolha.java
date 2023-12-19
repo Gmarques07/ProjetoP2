@@ -2,7 +2,7 @@ public class Escolha {
  private String texto;
  private Capitulo proximo;
 
-   public Escolha(String texto, Capitulo proximo){
+   public Escolha(String texto, String textoMostrado, Capitulo proximo){
         this.texto = texto;
         this.proximo = proximo;
     }

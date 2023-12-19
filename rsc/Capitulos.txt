@@ -1,0 +1,167 @@
+CAPITULO
+ID
+Raiz
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista
+ e um guerreiro solitario, sua pequena jornada comeca em uma pequena cidade chamada Erion, Erion e a cidade inicial para os mortais que estão em busca de evolucão.  
+Protagonista
+ acabou de chegar na cidade, com o objetivo de conhecer como as coisas funcionam ali pela cidade de Erion e buscar informacoes sobre missoes ou tarefas
+que possam ajudar a cidade.
+VARIACOES
+0
+0
+
+CAPITULO
+ID
+Explorar
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista
+ decide dar uma volta pela cidade, conhecendo os habitantes locais. Encontra uma forja onde um ferreiro talentoso esta disposto a forjar uma arma personalizada para voce,
+com base no conhecimento e experiencia que acumulou em Erion. O ferreiro pede a ajuda para deter uma invasão de aranhas no deserto de Noatum e pede para que escolha entre
+duas armas muito raras entre os mortais da cidade de Erion. O Arco divino e o martelo Mjolnir. Qual sera a arma escolhida ?
+VARIACOES
+0
+0
+
+CAPITULO
+ID
+Arco
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista
+ decide que a sua arma sera o Arco divino. Por ter escolhido o Arco divino, foi capaz de conter toda a invasão do alto da torre sem sofrer nenhum dano,
+assim salvando a cidade da invasão.
+VARIACOES
+0
+0
+
+CAPITULO
+ID
+Martelo
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista
+ decide que a sua arma sera o Martelo Mjolnir. Por ter escolhido o Martelo Mjolnir,
+vai na linha de frente na batalha contra a invasão das aranhas, porem acaba não resistindo ao veneno de tantas aranhas...
+VARIACOES
+-100
+0
+
+CAPITULO
+ID
+Missoes
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista
+ decide primeiro procurar por informacoes sobre missoes na cidade de Erion. Assim encontra e vira amigo de um jovem guerreiro que tambem acabou de chegar na cidade,
+chamado de 
+Antagonista
+, determinados a desvendar os misterios que os trouxeram ate ali.
+VARIACOES
+0
+0
+
+CAPITULO
+ID
+Emboscada
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista
+ decide ir em busca de mais informacoes na taverna. Enquanto investigam, 
+Antagonista
+ e emboscado por uma gangue local.
+ Protagonista
+, na taverna, nota sua ausencia e parte para procura-lo, apenas para o encontrar ferido. Ele revela detalhes cruciais antes de falecer.
+VARIACOES
+0
+-100
+
+CAPITULO
+ID
+Abrigo
+PERSONAGENS
+Protagonista
+Antagonista
+TEXTO
+Protagonista
+ decide que e melhor seguir caminho para procurar um lugar para que possam descansar da sua viagem ate a cidade de Erion. Ao procurar por acomodacoes,
+Antagonista
+ e atacado, deixando Destiny sozinho e enfrentando novos desafios enquanto busca vinganca ou justica pela morte de seu companheiro.
+VARIACOES
+0
+-100
+
+ESCOLHA
+DE
+Raiz
+PARA
+Explorar
+TEXTO DIGITADO
+explorar
+TEXTO MOSTRADO
+Explorar a cidade
+
+ESCOLHA
+DE
+Raiz
+PARA
+Missoes
+TEXTO DIGITADO
+missoes
+TEXTO MOSTRADO
+Procurar por missoes
+
+ESCOLHA
+DE
+Explorar
+PARA
+Arco
+TEXTO DIGITADO
+arco divino
+TEXTO MOSTRADO
+Arco Divino foi a arma escolhida
+
+ESCOLHA
+DE
+Explorar
+PARA
+Martelo
+TEXTO DIGITADO
+martelo mjolnir
+TEXTO MOSTRADO
+Martelo Mjolnir foi a arma escolhida
+
+ESCOLHA
+DE
+Missoes
+PARA
+Emboscada
+TEXTO DIGITADO
+taverna
+TEXTO MOSTRADO
+Buscar informacoes na taverna
+
+ESCOLHA
+DE
+Missoes
+PARA
+Abrigo
+TEXTO DIGITADO
+abrigo
+TEXTO MOSTRADO
+Buscar abrigo
+

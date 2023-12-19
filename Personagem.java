@@ -23,12 +23,11 @@ public class Personagem {
             this.energia = novaEnergia;
         }
     }
-    public void atualizarEnergia(int incremento){
-        int novaEnergia = this.energia + incremento;
+    public void atualizarEnergia(int variacao){
+        int novaEnergia = this.energia + variacao;
         setEnergia(novaEnergia);
-        if (incremento != 0 ) {
+        if (variacao != 0 ) {
             System.out.println("\n Devido aos ultimos acontecimentos, a energia de " + this.nome + " foi para " + this.energia + "." );
         }
     }
 }
-    
